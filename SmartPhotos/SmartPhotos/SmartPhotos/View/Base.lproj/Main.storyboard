@@ -13,7 +13,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="SAj-Rh-o9q">
             <objects>
-                <viewController storyboardIdentifier="welcomeVC" id="w26-XG-9cC" customClass="WelcomeViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcomeVC" id="w26-XG-9cC" customClass="WelcomeViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9g1-SA-C5Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
         <!--注册-->
         <scene sceneID="D59-Lz-QjT">
             <objects>
-                <viewController storyboardIdentifier="registrationVC" id="qQg-wA-Esh" customClass="RegisterViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="registrationVC" id="qQg-wA-Esh" customClass="RegisterViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="15o-yi-McO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,7 +159,7 @@
         <!--登陆-->
         <scene sceneID="Ku8-Lc-W7f">
             <objects>
-                <viewController storyboardIdentifier="logInVC" id="xYK-ej-9R9" customClass="LogInViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="logInVC" id="xYK-ej-9R9" customClass="LogInViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b1r-c3-eoq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,7 +294,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2fO-gO-Vk3">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dEi-fT-OK6" customClass="TabBarController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dEi-fT-OK6" customClass="TabBarController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="kin-Gs-NKu"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -317,7 +317,7 @@
         <!--我的-->
         <scene sceneID="Lk9-9f-6cD">
             <objects>
-                <viewController id="Nqg-W3-pCl" customClass="MineViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nqg-W3-pCl" customClass="MineViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Wkr-ow-0n0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -401,12 +401,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </tableViewCell>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRs-ml-lxB">
-                                <rect key="frame" x="129" y="205" width="135" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN3-xF-aM4">
                                 <rect key="frame" x="0.0" y="236" width="49" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -432,7 +426,6 @@
                     <connections>
                         <outlet property="AlbumsCount" destination="LOW-Oh-FuW" id="VH4-p9-YBX"/>
                         <outlet property="PhotoCount" destination="Oim-34-0QG" id="RXx-ff-yJu"/>
-                        <outlet property="UserName" destination="aRs-ml-lxB" id="JHA-5X-R5N"/>
                         <segue destination="xYK-ej-9R9" kind="presentation" identifier="toSignOut" id="Yzm-WZ-V1X"/>
                     </connections>
                 </viewController>
@@ -481,7 +474,7 @@
         <!--所有相册-->
         <scene sceneID="wHy-n6-FA4">
             <objects>
-                <tableViewController id="cUx-kD-2eu" customClass="AbumTableViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cUx-kD-2eu" customClass="AbumTableViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="mJg-vP-yUs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,7 +488,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="Lyw-4N-LNi" customClass="AlbumTableViewCell" customModule="Happy_Chat" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AlbumCell" id="Lyw-4N-LNi" customClass="AlbumTableViewCell" customModule="SmartPhotos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lyw-4N-LNi" id="VNs-Rm-xeT">
@@ -575,7 +568,7 @@
         <!--Album-->
         <scene sceneID="vGF-1b-neF">
             <objects>
-                <collectionViewController id="oIj-xl-jz0" customClass="PhotoCollectionViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="oIj-xl-jz0" customClass="PhotoCollectionViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="9qy-eN-FkV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -592,7 +585,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="Vwx-Qf-egY" customClass="PhotoCollectionViewCell" customModule="Happy_Chat" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="Vwx-Qf-egY" customClass="PhotoCollectionViewCell" customModule="SmartPhotos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -675,7 +668,7 @@
         <!--所有照片-->
         <scene sceneID="v0W-kw-TsO">
             <objects>
-                <viewController id="n3D-dM-ext" customClass="AllPhotosViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="n3D-dM-ext" customClass="AllPhotosViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LlD-s5-MQC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -714,7 +707,7 @@
         <!--Detail View Controller-->
         <scene sceneID="yLq-W7-tgd">
             <objects>
-                <viewController id="0p2-9g-b4D" customClass="DetailViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0p2-9g-b4D" customClass="DetailViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OVx-on-CSC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -730,7 +723,7 @@
         <!--上传-->
         <scene sceneID="Iio-Im-uTp">
             <objects>
-                <collectionViewController title="上传" id="wmi-qj-9Ps" customClass="UploadCollectionViewController" customModule="Happy_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="上传" id="wmi-qj-9Ps" customClass="UploadCollectionViewController" customModule="SmartPhotos" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="tpK-oR-EOY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -747,7 +740,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="pPQ-Fc-l1E" customClass="PhotoCollectionViewCell" customModule="Happy_Chat" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="pPQ-Fc-l1E" customClass="PhotoCollectionViewCell" customModule="SmartPhotos" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -904,6 +897,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="leU-Lx-JpO"/>
-        <segue reference="awJ-Uh-HcW"/>
+        <segue reference="Yzm-WZ-V1X"/>
     </inferredMetricsTieBreakers>
 </document>

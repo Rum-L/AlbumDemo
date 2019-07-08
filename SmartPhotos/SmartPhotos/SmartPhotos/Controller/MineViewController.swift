@@ -55,12 +55,12 @@ class MineViewController: UIViewController {
         AlbumsCount.text = "\(realm.objects(Album.self).count)"
         
         let user = BmobUser.getCurrent()
+        
         if user != nil {
-            UserName.text = user?.username
-        }else{
             //对象为空时，可打开用户注册界面
             self.performSegue(withIdentifier: "toSignOut", sender: self)
         }
+        
         UserName.textAlignment = .center
         let customImage: UIImageView = UIImageView.init(frame: CGRect(x: self.view.bounds.midX - 40, y: self.view.bounds.midY - 300, width: 80, height: 80))
         self.view.addSubview(customImage)
