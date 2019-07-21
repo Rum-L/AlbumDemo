@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = UIColor(red: 171, green: 188, blue: 237)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         
-        Bmob.register(withAppKey: "ace7fc98d8bed617e96c1643b0fe7062")
+        Bmob.register(withAppKey: "")
         
         let migrationBlock: MigrationBlock = { migration, oldSchemaVersion in
             migration.enumerateObjects(ofType: Album.className(), { (oldObject, newObject) in
